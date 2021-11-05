@@ -9,5 +9,7 @@ import Foundation
 
 
 struct Petitions : Decodable {
-    var result : [Petitions]
+    var results : [Petition]
+    
+    
 }

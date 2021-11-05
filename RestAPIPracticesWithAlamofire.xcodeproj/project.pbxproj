@@ -122,6 +122,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		59089DF127355BA00072317D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				59B659272732C2BB00FCC23E /* Petition.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		59089DF227355BA70072317D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				59B658F52732C18700FCC23E /* AppDelegate.swift */,
+				59B658F72732C18700FCC23E /* SceneDelegate.swift */,
+				59B658F92732C18700FCC23E /* ViewController.swift */,
+				59B659252732C25C00FCC23E /* CellTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		59089DF327355BAD0072317D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				59B659292732C2EE00FCC23E /* Petitions.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		59089DF427355BDD0072317D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				59B6592B2732C4F300FCC23E /* WebServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		59B658E92732C18700FCC23E = {
 			isa = PBXGroup;
 			children = (
@@ -147,17 +182,14 @@
 		59B658F42732C18700FCC23E /* RestAPIPracticesWithAlamofire */ = {
 			isa = PBXGroup;
 			children = (
-				59B658F52732C18700FCC23E /* AppDelegate.swift */,
-				59B658F72732C18700FCC23E /* SceneDelegate.swift */,
-				59B658F92732C18700FCC23E /* ViewController.swift */,
+				59089DF427355BDD0072317D /* Services */,
+				59089DF327355BAD0072317D /* ViewModel */,
+				59089DF227355BA70072317D /* View */,
+				59089DF127355BA00072317D /* Model */,
 				59B658FB2732C18700FCC23E /* Main.storyboard */,
 				59B658FE2732C18900FCC23E /* Assets.xcassets */,
 				59B659002732C18900FCC23E /* LaunchScreen.storyboard */,
 				59B659032732C18900FCC23E /* Info.plist */,
-				59B659252732C25C00FCC23E /* CellTableViewCell.swift */,
-				59B659272732C2BB00FCC23E /* Petition.swift */,
-				59B659292732C2EE00FCC23E /* Petitions.swift */,
-				59B6592B2732C4F300FCC23E /* WebServices.swift */,
 			);
 			path = RestAPIPracticesWithAlamofire;
 			sourceTree = "<group>";

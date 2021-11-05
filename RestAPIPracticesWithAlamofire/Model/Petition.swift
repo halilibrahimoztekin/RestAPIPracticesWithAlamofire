@@ -11,3 +11,8 @@ struct Petition : Decodable {
     var body : String
     var signatureCount : Int
 }
+struct Petitionlar : Decodable {
+    var result : [Petition]
+    
+    
+}
