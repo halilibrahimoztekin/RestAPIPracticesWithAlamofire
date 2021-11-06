@@ -7,11 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-    
-    
-    
-    
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+
+
+
     @IBOutlet var tableView: UITableView!
     let urlString = "https://www.hackingwithswift.com/samples/petitions-1.json"
     var petitions = [Petition]()
@@ -20,13 +20,14 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         tableView.dataSource = self
         tableView.delegate = self
         getData()
-        
+
+
         // Do any additional setup after loading the view.
     }
-    
-    
-    func getData(){
-        
+
+
+    func getData() {
+
         WebServices().getFeed { pet in
             self.petitions = pet.results
             DispatchQueue.main.async {
@@ -36,7 +37,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             }
         }
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return petitions.count
     }
@@ -48,7 +49,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         cell.signature.text = String(petition.signatureCount)
         return cell
     }
-    
-    
+
+
 }
 

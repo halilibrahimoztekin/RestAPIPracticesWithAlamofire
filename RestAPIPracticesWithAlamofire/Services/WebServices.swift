@@ -13,15 +13,21 @@ class WebServices{
     
     func getFeed(completion : @escaping (Petitions) -> ()){
         
-        AF.request("https://www.hackingwithswift.com/samples/petitions-1.json", method: .get )
-            .responseDecodable(of: Petitions.self) { response in
-                let leti = response.value
-                
-                
-                completion(leti!)
-            }
+      AF.request("https://www.hackingwithswift.com/samples/petitions-1.json", method: .get )
+         .responseDecodable(of: Petitions.self) { response in
+             let leti = response.value
+      
+      
+             completion(leti!)
+         }
+        
+        
+        
+       
         
     }
+    
+   
     
     
     

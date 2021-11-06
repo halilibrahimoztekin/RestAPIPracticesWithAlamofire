@@ -133,8 +133,6 @@
 		59089DF227355BA70072317D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				59B658F52732C18700FCC23E /* AppDelegate.swift */,
-				59B658F72732C18700FCC23E /* SceneDelegate.swift */,
 				59B658F92732C18700FCC23E /* ViewController.swift */,
 				59B659252732C25C00FCC23E /* CellTableViewCell.swift */,
 			);
@@ -155,6 +153,18 @@
 				59B6592B2732C4F300FCC23E /* WebServices.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		593C35BD2736C5D5007AF42B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				59B659002732C18900FCC23E /* LaunchScreen.storyboard */,
+				59B658F52732C18700FCC23E /* AppDelegate.swift */,
+				59B658F72732C18700FCC23E /* SceneDelegate.swift */,
+				59B658FB2732C18700FCC23E /* Main.storyboard */,
+				59B658FE2732C18900FCC23E /* Assets.xcassets */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		59B658E92732C18700FCC23E = {
@@ -182,14 +192,12 @@
 		59B658F42732C18700FCC23E /* RestAPIPracticesWithAlamofire */ = {
 			isa = PBXGroup;
 			children = (
+				59B659032732C18900FCC23E /* Info.plist */,
+				593C35BD2736C5D5007AF42B /* Core */,
 				59089DF427355BDD0072317D /* Services */,
 				59089DF327355BAD0072317D /* ViewModel */,
 				59089DF227355BA70072317D /* View */,
 				59089DF127355BA00072317D /* Model */,
-				59B658FB2732C18700FCC23E /* Main.storyboard */,
-				59B658FE2732C18900FCC23E /* Assets.xcassets */,
-				59B659002732C18900FCC23E /* LaunchScreen.storyboard */,
-				59B659032732C18900FCC23E /* Info.plist */,
 			);
 			path = RestAPIPracticesWithAlamofire;
 			sourceTree = "<group>";
